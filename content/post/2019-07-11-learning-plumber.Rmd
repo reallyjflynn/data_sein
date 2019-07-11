@@ -1,0 +1,59 @@
+---
+title: Learning Plumber
+author: John Flynn
+date: '2019-07-11'
+slug: learning-plumber
+categories:
+  - Plumber
+  - Learning
+tags: []
+---
+
+
+I've been meaning to figure out plumber for a while. Have gone through some of the chapters in the plumber book a couple of times, but nothing has stuck so far. 
+
+So I don't know who I seen say it, but I'm going to try writing about plumber to force myself to learn the tool.
+
+### Why?
+
+I'm really interested in getting R into production. 
+I work for a company where I'm the only data scientist; most of my work is helping folks understand products better, and do research on techniques / tools that can help us with data focused products.
+
+But there is no pipeline for getting R anywhere near production. 
+
+The pipeline, when there were other DS people was to have a DS partner with a backend engineer who could then turn Python into Java ... Not a great practice. 
+
+
+We work in a google cloud environment, and I've worked with AWS in the past. 
+So having an R -> API -> Docker -> Kubernetes pipeline seems like something that would open up alot of new possibilities in my work. 
+
+
+### Resources:
+
+
+Website :: https://www.rplumber.io
+
+Bookdown :: https://www.rplumber.io/docs/routing-and-input.html#endpoints
+
+
+I'm just going to be going through the quickstart of the plumber bookdown. But supplementing the examples with other data / functions ... to force myself to think about what I'm doing and not just copy someone else's code. 
+
+
+
+### Quickstart
+
+
+
+Lets assume we know [what an API is][1] and  [how to install packages in R][2] and jump straight to quickstart a
+
+
+
+
+
+
+
+
+
+
+[1]: https://en.wikipedia.org/wiki/Application_programming_interface "API"
+[2]: https://csgillespie.wordpress.com/2010/11/06/installing-r-packages/ "Install R Packages"

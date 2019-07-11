@@ -20,11 +20,29 @@
     </item>
     
     <item>
+      <title>Learning</title>
+      <link>/categories/learning/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>News</title>
       <link>/categories/news/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plumber</title>
+      <link>/categories/plumber/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/plumber/</guid>
       <description></description>
     </item>
     

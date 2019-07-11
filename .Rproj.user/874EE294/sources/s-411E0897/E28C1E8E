@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1562877064773.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E28C1E8E",
+    "lastKnownWriteTime" : 1562880726,
+    "last_content_update" : 1562880726581,
+    "path" : "~/Learning/data_sein/content/post/2019-07-11-learning-plumber.Rmd",
+    "project_path" : "content/post/2019-07-11-learning-plumber.Rmd",
+    "properties" : {
+        "cursorPosition" : "9,0",
+        "scrollLine" : "9"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
