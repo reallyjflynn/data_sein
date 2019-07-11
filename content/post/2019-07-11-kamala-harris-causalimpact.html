@@ -1,0 +1,30 @@
+---
+title: 'Kamala Harris:: CausalImpact'
+author: John Flynn
+date: '2019-07-11'
+slug: kamala-harris-causalimpact
+categories:
+  - R
+  - CausalImpact
+  - News
+tags: []
+---
+
+
+
+<p>I want to look at the effect Kamala Harris’ performance in the first presidential debate on the volume of articles being written about her.</p>
+<p>There was an idea that Harris was under represented by the media coming up to debates.</p>
+<p>But the confrontation with Biden has earned her campaign more attention</p>
+<p><img src="/post/2019-07-11-kamala-harris-causalimpact_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre><code>## Analysis report {CausalImpact}
+## 
+## 
+## During the post-intervention period, the response variable had an average value of approx. 967.55. By contrast, in the absence of an intervention, we would have expected an average response of 188.79. The 95% interval of this counterfactual prediction is [67.97, 298.89]. Subtracting this prediction from the observed response yields an estimate of the causal effect the intervention had on the response variable. This effect is 778.75 with a 95% interval of [668.66, 899.57]. For a discussion of the significance of this effect, see below.
+## 
+## Summing up the individual data points during the post-intervention period (which can only sometimes be meaningfully interpreted), the response variable had an overall value of 10.64K. By contrast, had the intervention not taken place, we would have expected a sum of 2.08K. The 95% interval of this prediction is [0.75K, 3.29K].
+## 
+## The above results are given in terms of absolute numbers. In relative terms, the response variable showed an increase of +412%. The 95% interval of this percentage is [+354%, +476%].
+## 
+## This means that the positive effect observed during the intervention period is statistically significant and unlikely to be due to random fluctuations. It should be noted, however, that the question of whether this increase also bears substantive significance can only be answered by comparing the absolute effect (778.75) to the original goal of the underlying intervention.
+## 
+## The probability of obtaining this effect by chance is very small (Bayesian one-sided tail-area probability p = 0.001). This means the causal effect can be considered statistically significant.</code></pre>

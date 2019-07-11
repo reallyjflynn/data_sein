@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Data Sein</title>
+    <link>/categories/news/</link>
+    <description>Recent content in News on Data Sein</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kamala Harris:: CausalImpact</title>
+      <link>/2019/07/11/kamala-harris-causalimpact/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/11/kamala-harris-causalimpact/</guid>
+      <description>I want to look at the effect Kamala Harris’ performance in the first presidential debate on the volume of articles being written about her.
+There was an idea that Harris was under represented by the media coming up to debates.
+But the confrontation with Biden has earned her campaign more attention
+## Analysis report {CausalImpact} ## ## ## During the post-intervention period, the response variable had an average value of approx.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1562864549593.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "928818C3",
+    "lastKnownWriteTime" : 1562864938,
+    "last_content_update" : 1562864938216,
+    "path" : "~/Learning/data_sein/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+        "cursorPosition" : "26,52",
+        "scrollLine" : "17"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

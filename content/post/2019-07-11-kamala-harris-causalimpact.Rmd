@@ -1,0 +1,115 @@
+---
+title: 'Kamala Harris:: CausalImpact'
+author: John Flynn
+date: '2019-07-11'
+slug: kamala-harris-causalimpact
+categories:
+  - R
+  - CausalImpact
+  - News
+tags: []
+---
+
+
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+
+```
+
+
+
+```{r}
+
+library(tidyverse)
+library(CausalImpact)
+library(rstanarm)
+
+```
+
+
+
+
+```{r}
+
+files <- c('president_2020 - Articles 07-09-2019.csv', 
+           'president_2020 - Articles 07-09-2019-1.csv', 
+           'president_2020 - Articles 07-09-2019-2.csv', 
+           'president_2020 - Articles 07-09-2019-3.csv', 
+           'president_2020 - Articles 07-09-2019-4.csv')
+
+harris <- tibble()
+
+for (i in 1:length(files)) {
+        
+        harris <- bind_rows(harris, 
+                    read_csv(
+paste('~/Learning/useR/bayes_class/data//',
+      files[i], 
+      sep = '')))
+}
+
+
+daily_harris_articles <- harris %>% 
+        mutate(date = as.Date(Published)) %>% 
+        group_by(date) %>%
+        summarise(articles = n_distinct(Link),
+                  interactions = sum(`Total Interactions`)) %>%
+        ungroup()
+
+
+daily_harris <- harris %>% 
+        mutate(date = as.Date(Published)) %>% 
+        group_by(date) %>%
+        summarise(articles = n_distinct(Link),
+                  interactions = sum(`Total Interactions`)) %>%
+        ungroup()
+
+
+```
+
+
+
+
+```{r}
+
+debate <- as.Date('2019-06-27')
+pre.period <- as.Date(c(min(daily_harris$date), debate))
+post.period <- as.Date(c(debate + 1, max(daily_harris$date)))
+
+```
+
+
+I want to look at the effect Kamala Harris' performance in the first presidential debate on the volume of articles being written about her.
+
+There was an idea that Harris was under represented by the media coming up to debates.
+
+But the confrontation with Biden has earned her campaign more attention
+
+```{r}
+
+# daily_harris_articles
+# daily_harris_interactions
+
+d <- daily_harris %>% dplyr::select(date, articles)
+
+impact <- CausalImpact(d, 
+                           pre.period, post.period)
+
+
+
+plot(impact) + 
+        theme_bw(base_size = 20) + 
+        labs(title = 'Articles About \nKamala Harris')
+
+
+# summary(impact)
+
+summary(impact, output = "report")
+
+```
+
+
